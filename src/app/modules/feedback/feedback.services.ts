@@ -4,6 +4,7 @@ import AppError from '../../error/appError';
 import { IFeedback } from './feedback.interface';
 import Feedback from './feedback.model';
 import QueryBuilder from '../../builder/QueryBuilder';
+import Notification from '../notification/notification.model';
 
 const createFeedBack = async (userId: string, payload: IFeedback) => {
   const result = await Feedback.create({ ...payload, user: userId });
@@ -41,7 +42,12 @@ const replyFeedback = async (id: string, replyMessage: string) => {
   );
 
   //!TODO: need to send notification to user for reply message
-
+  const notificationData = {
+    title: 'Feedback reply message',
+    message: result?.replyMessage,
+    receiver: result?.user,
+  };
+  await Notification.create(notificationData);
   return result;
 };
 

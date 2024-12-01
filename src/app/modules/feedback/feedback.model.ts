@@ -6,7 +6,7 @@ const feedbackSchema = new Schema<IFeedback>(
     user: {
       type: Schema.Types.ObjectId,
       required: true,
-      ref: 'User',
+      ref: 'NormalUser',
     },
     name: {
       type: String,
