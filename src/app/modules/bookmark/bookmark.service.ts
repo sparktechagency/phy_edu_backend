@@ -55,6 +55,7 @@ const getAllArticleBookmark = async (
   };
 };
 
+// add delete video bookmark
 const videoBookmarkAddDelete = async (profileId: string, videoId: string) => {
   // Check if video exists
   const video = await Video.findById(videoId);
