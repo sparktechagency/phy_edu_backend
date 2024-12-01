@@ -1,8 +1,9 @@
 import httpStatus from 'http-status';
 import AppError from '../../error/appError';
-import { ArticleBookmark } from './bookmark.model';
+import { ArticleBookmark, VideoBookmark } from './bookmark.model';
 import { Article } from '../article/article.model';
 import QueryBuilder from '../../builder/QueryBuilder';
+import { Video } from '../video/video.model';
 
 const articleBookmarkAddDelete = async (
   profileId: string,
@@ -47,3 +48,55 @@ const getAllArticleBookmark = async (query: Record<string, unknown>) => {
     result,
   };
 };
+
+const videoBookmarkAddDelete = async (profileId: string, videoId: string) => {
+  // Check if video exists
+  const video = await Video.findById(videoId);
+  if (!video) {
+    throw new AppError(httpStatus.NOT_FOUND, 'Video not found');
+  }
+
+  const bookmark = await VideoBookmark.findOne({
+    user: profileId,
+    video: videoId,
+  });
+
+  if (bookmark) {
+    const result = await VideoBookmark.findOneAndDelete({
+      user: profileId,
+      video: videoId,
+    });
+    return result;
+  } else {
+    const result = await VideoBookmark.create({
+      user: profileId,
+      video: videoId,
+    });
+    return result;
+  }
+};
+
+const getAllVideoBookmark = async (query: Record<string, unknown>) => {
+  const videoBookmarkQuery = new QueryBuilder(VideoBookmark.find(), query)
+    .search([''])
+    .fields()
+    .filter()
+    .paginate()
+    .sort();
+  const meta = await videoBookmarkQuery.countTotal();
+  const result = await videoBookmarkQuery.modelQuery;
+
+  return {
+    meta,
+    result,
+  };
+};
+
+const BookmarkService = {
+  articleBookmarkAddDelete,
+  getAllArticleBookmark,
+  videoBookmarkAddDelete,
+  getAllVideoBookmark,
+};
+
+export default BookmarkService;
