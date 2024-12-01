@@ -19,11 +19,11 @@ const articleBookmarkAddDelete = async (
     article: articleId,
   });
   if (bookmark) {
-    const result = await ArticleBookmark.findOneAndDelete({
+    await ArticleBookmark.findOneAndDelete({
       user: profileId,
       article: articleId,
     });
-    return result;
+    return null;
   } else {
     const result = await ArticleBookmark.create({
       user: profileId,
@@ -62,11 +62,11 @@ const videoBookmarkAddDelete = async (profileId: string, videoId: string) => {
   });
 
   if (bookmark) {
-    const result = await VideoBookmark.findOneAndDelete({
+    await VideoBookmark.findOneAndDelete({
       user: profileId,
       video: videoId,
     });
-    return result;
+    return null;
   } else {
     const result = await VideoBookmark.create({
       user: profileId,
