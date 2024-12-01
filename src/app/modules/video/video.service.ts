@@ -71,7 +71,6 @@ const getSingleVideoFromDB = async (id: string) => {
 };
 
 // delete video----------------
-
 const deleteVideoFromDB = async (id: string) => {
   const video = await Video.findById(id);
   if (!video) {
