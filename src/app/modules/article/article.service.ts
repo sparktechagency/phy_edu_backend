@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import httpStatus from 'http-status';
 import AppError from '../../error/appError';
 import QueryBuilder from '../../builder/QueryBuilder';
@@ -6,6 +7,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { IArticle } from './article.interface';
 import { Article } from './article.model';
+import { ArticleBookmark } from '../bookmark/bookmark.model';
 const createArticleIntoDB = async (payload: IArticle) => {
   const category = await Category.findById(payload.category);
   if (!category) {
@@ -31,8 +33,11 @@ const updateArticleIntoDB = async (id: string, payload: Partial<IArticle>) => {
 
 // get all videos
 
-const getAllArticleFromDB = async (query: Record<string, unknown>) => {
-  const articleQuery = new QueryBuilder(Article.find(), query)
+const getAllArticleFromDB = async (
+  profileId: string,
+  query: Record<string, unknown>,
+) => {
+  const articleQuery = new QueryBuilder(Article.find().lean(), query)
     .search(['title'])
     .fields()
     .filter()
@@ -41,9 +46,21 @@ const getAllArticleFromDB = async (query: Record<string, unknown>) => {
   const meta = await articleQuery.countTotal();
   const result = await articleQuery.modelQuery;
 
+  const bookmarks = await ArticleBookmark.find({ user: profileId }).select(
+    'article',
+  );
+  const bookmarkArticleIds = new Set(
+    bookmarks.map((b) => b?.article?.toString()),
+  );
+
+  const enrichedResult = result.map((article) => ({
+    ...article,
+    isBookmark: bookmarkArticleIds.has((article as any)._id.toString()),
+  }));
+
   return {
     meta,
-    result,
+    result: enrichedResult,
   };
 };
 

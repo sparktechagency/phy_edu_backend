@@ -51,7 +51,10 @@ const getSingleArticle = catchAsync(async (req, res) => {
 
 // get all videos
 const getAllArticle = catchAsync(async (req, res) => {
-  const result = await ArticleService.getAllArticleFromDB(req?.query);
+  const result = await ArticleService.getAllArticleFromDB(
+    req?.user?.profileId,
+    req?.query,
+  );
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,

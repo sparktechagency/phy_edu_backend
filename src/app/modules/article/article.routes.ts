@@ -5,6 +5,7 @@ import validateRequest from '../../middlewares/validateRequest';
 import { uploadFile } from '../../helper/fileUploader';
 import articleValidations from './article.validation';
 import ArticleController from './article.controller';
+import simpleAuth from '../../middlewares/simpleAuth';
 
 const router = express.Router();
 
@@ -36,7 +37,7 @@ router.patch(
   ArticleController.updateArticle,
 );
 
-router.get('/get-all-article', ArticleController.getAllArticle);
+router.get('/get-all-article', simpleAuth, ArticleController.getAllArticle);
 router.get('/single-article/:id', ArticleController.getSingleArticle);
 // delete article---
 router.delete(
