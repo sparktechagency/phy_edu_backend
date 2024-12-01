@@ -41,7 +41,6 @@ const replyFeedback = async (id: string, replyMessage: string) => {
     { new: true, runValidators: true },
   );
 
-  //!TODO: need to send notification to user for reply message
   const notificationData = {
     title: 'Feedback reply message',
     message: result?.replyMessage,

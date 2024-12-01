@@ -12,6 +12,7 @@ import { articleRoutes } from '../modules/article/article.routes';
 import { categoryRoutes } from '../modules/category/category.routes';
 import { metaRoutes } from '../modules/meta/meta.routes';
 import { bookmarkRoutes } from '../modules/bookmark/bookmark.routes';
+import { notificationRoutes } from '../modules/notification/notification.routes';
 
 const router = Router();
 
@@ -64,6 +65,10 @@ const moduleRoutes = [
   {
     path: '/bookmark',
     router: bookmarkRoutes,
+  },
+  {
+    path: '/notification',
+    router: notificationRoutes,
   },
 ];
 

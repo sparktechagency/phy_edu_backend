@@ -4,7 +4,10 @@ import sendResponse from '../../utilities/sendResponse';
 import feedbackService from './feedback.services';
 
 const createFeedBack = catchAsync(async (req, res) => {
-  const result = await feedbackService.createFeedBack(req?.user?.id, req?.body);
+  const result = await feedbackService.createFeedBack(
+    req?.user?.profileId,
+    req?.body,
+  );
   sendResponse(res, {
     statusCode: httpStatus.CREATED,
     success: true,
