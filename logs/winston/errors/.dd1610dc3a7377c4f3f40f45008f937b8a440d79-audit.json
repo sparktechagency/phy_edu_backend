@@ -54,6 +54,11 @@
             "date": 1733039392243,
             "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-12-01-13-error.log",
             "hash": "0ea3b61e83b113df99f94e7ac6af17e0cb72dd02787acb7545c8bec022f3f2c6"
+        },
+        {
+            "date": 1733040340756,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-12-01-14-error.log",
+            "hash": "4076a2e5da90c0913b47050194e8e8316390a9476ef3516e51ae73920e48f6ae"
         }
     ],
     "hashType": "sha256"
