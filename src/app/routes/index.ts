@@ -10,6 +10,7 @@ import { superAdminRoutes } from '../modules/superAdmin/superAdmin.routes';
 import { videoRoutes } from '../modules/video/video.routes';
 import { articleRoutes } from '../modules/article/article.routes';
 import { categoryRoutes } from '../modules/category/category.routes';
+import { metaRoutes } from '../modules/meta/meta.routes';
 
 const router = Router();
 
@@ -54,6 +55,10 @@ const moduleRoutes = [
   {
     path: '/category',
     router: categoryRoutes,
+  },
+  {
+    path: '/meta',
+    router: metaRoutes,
   },
 ];
 

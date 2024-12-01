@@ -32,9 +32,19 @@ const getAllNormalUser = async (query: Record<string, unknown>) => {
   };
 };
 
+const getSingleUser = async (id: string) => {
+  const normalUser = await NormalUser.findById(id);
+  if (!normalUser) {
+    throw new AppError(httpStatus.NOT_FOUND, 'User not found');
+  }
+
+  return normalUser;
+};
+
 const NormalUserServices = {
   updateUserProfile,
   getAllNormalUser,
+  getSingleUser,
 };
 
 export default NormalUserServices;

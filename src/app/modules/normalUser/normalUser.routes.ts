@@ -27,5 +27,10 @@ router.get(
   auth(USER_ROLE.superAdmin),
   NormalUserController.getAllNormalUser,
 );
+router.get(
+  '/get-single-user/:id',
+  auth(USER_ROLE.superAdmin),
+  NormalUserController.getSingleUser,
+);
 
 export const normalUserRoutes = router;
