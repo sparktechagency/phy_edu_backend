@@ -19,6 +19,7 @@ const articleBookmarkAddDelete = catchAsync(async (req, res) => {
 const getAllArticleBookmark = catchAsync(async (req, res) => {
   const result = await BookmarkService.getAllArticleBookmark(
     req.user.profileId,
+    req.query,
   );
   sendResponse(res, {
     statusCode: httpStatus.OK,
@@ -44,7 +45,10 @@ const videoBookmarkAddDelete = catchAsync(async (req, res) => {
 });
 
 const getAllVideoBookmark = catchAsync(async (req, res) => {
-  const result = await BookmarkService.getAllVideoBookmark(req.query);
+  const result = await BookmarkService.getAllVideoBookmark(
+    req.user.profileId,
+    req.query,
+  );
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,

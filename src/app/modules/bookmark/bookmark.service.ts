@@ -33,8 +33,14 @@ const articleBookmarkAddDelete = async (
   }
 };
 
-const getAllArticleBookmark = async (query: Record<string, unknown>) => {
-  const articleBookmarkQuery = new QueryBuilder(ArticleBookmark.find(), query)
+const getAllArticleBookmark = async (
+  profileId: string,
+  query: Record<string, unknown>,
+) => {
+  const articleBookmarkQuery = new QueryBuilder(
+    ArticleBookmark.find({ user: profileId }),
+    query,
+  )
     .search([''])
     .fields()
     .filter()
@@ -76,8 +82,14 @@ const videoBookmarkAddDelete = async (profileId: string, videoId: string) => {
   }
 };
 
-const getAllVideoBookmark = async (query: Record<string, unknown>) => {
-  const videoBookmarkQuery = new QueryBuilder(VideoBookmark.find(), query)
+const getAllVideoBookmark = async (
+  profileId: string,
+  query: Record<string, unknown>,
+) => {
+  const videoBookmarkQuery = new QueryBuilder(
+    VideoBookmark.find({ user: profileId }),
+    query,
+  )
     .search([''])
     .fields()
     .filter()
