@@ -4,6 +4,7 @@ import { ICategory, ISubCategory } from './category.interface';
 import Category, { SubCategory } from './category.model';
 import mongoose from 'mongoose';
 
+// create category into db
 const createCategoryIntoDB = async (payload: ICategory) => {
   const result = await Category.create(payload);
   return result;
