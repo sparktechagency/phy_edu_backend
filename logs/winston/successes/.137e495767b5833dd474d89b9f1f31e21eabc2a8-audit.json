@@ -1,0 +1,60 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\educational-website\\logs\\winston\\successes\\.137e495767b5833dd474d89b9f1f31e21eabc2a8-audit.json",
+    "files": [
+        {
+            "date": 1732593826622,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-11-26-10-success.log",
+            "hash": "a191d00ff0d821f47c008fa0e1422d54b3e242b2fa0c2748f8bc9b72e9238b35"
+        },
+        {
+            "date": 1732602785889,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-11-26-12-success.log",
+            "hash": "4d83f3df5197cf18d8535bf71607e6ad76edd030d5515744283280f25cfdf690"
+        },
+        {
+            "date": 1732610176082,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-11-26-14-success.log",
+            "hash": "8cb904ddb81693b44f62f47b81629a453afaf8bd85f5d92bb164d733bdb5cd64"
+        },
+        {
+            "date": 1732612223069,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-11-26-15-success.log",
+            "hash": "84a948391b189630e87834886c20aed211b909aeb75ef855781169d49283467c"
+        },
+        {
+            "date": 1732618901031,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-11-26-17-success.log",
+            "hash": "1cc95a495d99a6b93eecec1ce68a5ce2f13ef98f9a6bd9836a72b58c28ff11e9"
+        },
+        {
+            "date": 1733025289546,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-12-01-09-success.log",
+            "hash": "484070d6a422d494e84c2b1d10c0ab9e2b652b4c15d97fe86407330c81934369"
+        },
+        {
+            "date": 1733025625264,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-12-01-10-success.log",
+            "hash": "db76f7071f66e496d9b3173f67a2acff6243dbbb1af65b518b360004f6862bf9"
+        },
+        {
+            "date": 1733030196947,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-12-01-11-success.log",
+            "hash": "ecc8f20c19ae07d975c134cab68bcbee361551daeaec723f97515e157b1468a7"
+        },
+        {
+            "date": 1733033145726,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-12-01-12-success.log",
+            "hash": "477eebf5780116192807e2fc97d297c8e7fb869724b33253ebd8c5dd9868af37"
+        },
+        {
+            "date": 1733039392241,
+            "name": "D:\\educational-website\\logs\\winston\\successes\\um-2024-12-01-13-success.log",
+            "hash": "87c775a8aca27fa13ac159d9552fdd1a28527186e430be124122ec28b01c6758"
+        }
+    ],
+    "hashType": "sha256"
+}

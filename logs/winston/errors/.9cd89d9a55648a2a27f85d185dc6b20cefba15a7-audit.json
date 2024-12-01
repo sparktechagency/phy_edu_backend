@@ -1,0 +1,85 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\.9cd89d9a55648a2a27f85d185dc6b20cefba15a7-audit.json",
+    "files": [
+        {
+            "date": 1731384242774,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-12-10-error.log",
+            "hash": "cb74107cc00dda1f7eca6122a55f55346889e830d0b465b50c0e207ef1a6c44a"
+        },
+        {
+            "date": 1731469533913,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-13-09-error.log",
+            "hash": "28536dd3757ff15aa314d3c982c1a0409b454b0fc870932694f508e52ed84b24"
+        },
+        {
+            "date": 1731470403362,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-13-10-error.log",
+            "hash": "dfdac8f3a2c9cf2c8e90548f8e915f2b9e70303ae1533f0e0fb88a0e11e6ef47"
+        },
+        {
+            "date": 1731474178902,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-13-11-error.log",
+            "hash": "446aa8a698b417484cb236d81268a9356265779540444f2baa84df79de63af4d"
+        },
+        {
+            "date": 1732196388676,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-21-19-error.log",
+            "hash": "e55d730edffd267798bdbe1057c3c12ec21427d91cb704948ed5388ff09065c4"
+        },
+        {
+            "date": 1732247357127,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-22-09-error.log",
+            "hash": "d0bb0048b04538ddab8028496e5a765c2c8ee871522ad24da798075f09dc2c6c"
+        },
+        {
+            "date": 1732334756330,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-23-10-error.log",
+            "hash": "e6bc5524327170034522833fb6f42125b3d2a15460e1055069bab64904bba2f4"
+        },
+        {
+            "date": 1732338972219,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-23-11-error.log",
+            "hash": "dfc8c0bbbf1dfe2e18d7443e643ebcefa26785e661e3b88fcd9c74667b283635"
+        },
+        {
+            "date": 1732342597290,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-23-12-error.log",
+            "hash": "7a0de130fba4b96917611da9888025b027ce05d6cfd6cb87bb5fe60212625a5e"
+        },
+        {
+            "date": 1732352583760,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-23-15-error.log",
+            "hash": "b16ad0a54f202e4f89188ea85042abbe0e366a3af8cfee12be49454e01c2394f"
+        },
+        {
+            "date": 1732357973846,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-23-16-error.log",
+            "hash": "eacc9bb57c43f7193adab90fcaa9bf3568a41987ecc3b9c81de5f42702c001b1"
+        },
+        {
+            "date": 1732504638754,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-25-09-error.log",
+            "hash": "ff00b89d85a1545a8252abbf0a770f24852387a00e64022ace46ae3efbb83519"
+        },
+        {
+            "date": 1732508641467,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-25-10-error.log",
+            "hash": "3395020810de5a4c9e88556db4ec387a55f20c9d5c078be6d3957fa3454e9e77"
+        },
+        {
+            "date": 1732511072737,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-25-11-error.log",
+            "hash": "bbc25a0eacb16baf7dea7fd1e3f17ff54485f9dc234be46f38d0f755403da9b4"
+        },
+        {
+            "date": 1732591154583,
+            "name": "D:\\Solution Squed Project\\protipzz\\logs\\winston\\errors\\um-2024-11-26-09-error.log",
+            "hash": "4041fbdcf43110aa5d69ac500ea3af74b4b197de4daf497953ae0d8c255de25f"
+        }
+    ],
+    "hashType": "sha256"
+}

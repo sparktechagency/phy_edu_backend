@@ -1,0 +1,60 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\educational-website\\logs\\winston\\errors\\.dd1610dc3a7377c4f3f40f45008f937b8a440d79-audit.json",
+    "files": [
+        {
+            "date": 1732593826624,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-11-26-10-error.log",
+            "hash": "c7922c50d9d5581c45fb4d721cb8c7b707f8ff1a69477107ed1ce274a3751cd2"
+        },
+        {
+            "date": 1732602785891,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-11-26-12-error.log",
+            "hash": "96b78b8e4ea58356d82196b3aff4ca643bcd8644cf47d875d0b35331e4a90714"
+        },
+        {
+            "date": 1732610176085,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-11-26-14-error.log",
+            "hash": "b164b1b0d95a7f1ff7db300f20193b6af714c1cd123639fa2c767f4a26bddef4"
+        },
+        {
+            "date": 1732612223071,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-11-26-15-error.log",
+            "hash": "0320ac9faf4ae58972855e95f92197b2545775875631ab9608b51c9da0ed7824"
+        },
+        {
+            "date": 1732618901033,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-11-26-17-error.log",
+            "hash": "623f29eef628cfb8322c28ad974ee2804755f41b7731d6ec6f53cd86e7efa1cb"
+        },
+        {
+            "date": 1733025289548,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-12-01-09-error.log",
+            "hash": "8a318583bb5afbc9a1a41229411b4556ee93755a75b12606e2f4bd46c4acb49d"
+        },
+        {
+            "date": 1733025625267,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-12-01-10-error.log",
+            "hash": "673b52f5990e509c8b7a17684df1ee165f2d1b7946bc913fa63ed452cfee387f"
+        },
+        {
+            "date": 1733030196949,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-12-01-11-error.log",
+            "hash": "c99165d3651ce3a3f85dd6b6e96f909eac3a3d7bd7a86391528ecbc1ee1f2bab"
+        },
+        {
+            "date": 1733033145729,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-12-01-12-error.log",
+            "hash": "caa9ff2ae190220fb6ddd9c2833e25b1b85ced2d1969cbe6604be1d48ddd3bb8"
+        },
+        {
+            "date": 1733039392243,
+            "name": "D:\\educational-website\\logs\\winston\\errors\\um-2024-12-01-13-error.log",
+            "hash": "0ea3b61e83b113df99f94e7ac6af17e0cb72dd02787acb7545c8bec022f3f2c6"
+        }
+    ],
+    "hashType": "sha256"
+}
