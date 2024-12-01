@@ -56,7 +56,6 @@ const loginUserIntoDB = async (payload: TLoginUser) => {
 const loginWithGoogle = async (payload: ILoginWithGoogle) => {
   const session = await mongoose.startSession();
   session.startTransaction();
-
   try {
     // Check if the user already exists
     const isExistUser = await User.findOne({ email: payload.email }).session(
@@ -126,10 +125,8 @@ const loginWithGoogle = async (payload: ILoginWithGoogle) => {
       config.jwt_refresh_secret as string,
       config.jwt_refresh_expires_in as string,
     );
-
     await session.commitTransaction();
     session.endSession();
-
     return { accessToken, refreshToken };
   } catch (error) {
     await session.abortTransaction();
