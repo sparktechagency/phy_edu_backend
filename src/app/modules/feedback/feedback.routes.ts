@@ -26,7 +26,7 @@ router.put(
   validateRequest(feedbackValidations.updateFeedbackValidationSchema),
   feedbackController.replyFeedback,
 );
-
+// delete feedback
 router.delete(
   '/delete-feedback/:id',
   auth(USER_ROLE.superAdmin),
