@@ -11,7 +11,9 @@ const articleBookmarkAddDelete = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: `${result?._id} ? "Bookmark added successfully : "Bookmark deleted successfully`,
+    message: result
+      ? 'Bookmark added successfully'
+      : 'Bookmark deleted successfully',
     data: result,
   });
 });

@@ -11,6 +11,7 @@ import { videoRoutes } from '../modules/video/video.routes';
 import { articleRoutes } from '../modules/article/article.routes';
 import { categoryRoutes } from '../modules/category/category.routes';
 import { metaRoutes } from '../modules/meta/meta.routes';
+import { bookmarkRoutes } from '../modules/bookmark/bookmark.routes';
 
 const router = Router();
 
@@ -59,6 +60,10 @@ const moduleRoutes = [
   {
     path: '/meta',
     router: metaRoutes,
+  },
+  {
+    path: '/bookmark',
+    router: bookmarkRoutes,
   },
 ];
 

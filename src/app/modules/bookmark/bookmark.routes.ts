@@ -10,7 +10,7 @@ router.post(
   auth(USER_ROLE.user),
   BookmarkController.articleBookmarkAddDelete,
 );
-router.get(
+router.post(
   '/add-delete-video-bookmark/:id',
   auth(USER_ROLE.user),
   BookmarkController.videoBookmarkAddDelete,
