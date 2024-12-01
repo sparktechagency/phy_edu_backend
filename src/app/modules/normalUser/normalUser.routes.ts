@@ -27,6 +27,7 @@ router.get(
   auth(USER_ROLE.superAdmin),
   NormalUserController.getAllNormalUser,
 );
+// get single user
 router.get(
   '/get-single-user/:id',
   auth(USER_ROLE.superAdmin),
