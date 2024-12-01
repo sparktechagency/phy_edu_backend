@@ -5,6 +5,7 @@ import validateRequest from '../../middlewares/validateRequest';
 import videoValidationSchema from './video.validation';
 import VideoController from './video.controller';
 import { uploadFile } from '../../helper/fileUploader';
+import simpleAuth from '../../middlewares/simpleAuth';
 
 const router = express.Router();
 
@@ -36,7 +37,7 @@ router.patch(
   VideoController.updateVideo,
 );
 
-router.get('/get-all-videos', VideoController.getAllVideo);
+router.get('/get-all-videos', simpleAuth, VideoController.getAllVideo);
 router.get('/get-single-video/:id', VideoController.getSingleVideo);
 router.delete('/delete-video/:id', VideoController.deleteVideo);
 

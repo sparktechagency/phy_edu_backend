@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import httpStatus from 'http-status';
 import AppError from '../../error/appError';
 import { IVideo } from './video.interface';
@@ -6,6 +7,7 @@ import QueryBuilder from '../../builder/QueryBuilder';
 import Category from '../category/category.model';
 import fs from 'fs/promises';
 import path from 'path';
+import { VideoBookmark } from '../bookmark/bookmark.model';
 const createVideoIntoDB = async (payload: IVideo) => {
   const category = await Category.findById(payload.category);
   if (!category) {
@@ -31,8 +33,11 @@ const updateVideoIntoDB = async (id: string, payload: Partial<IVideo>) => {
 
 // get all videos
 
-const getAllVideoFromDB = async (query: Record<string, unknown>) => {
-  const videoQuery = new QueryBuilder(Video.find(), query)
+const getAllVideoFromDB = async (
+  profileId: string,
+  query: Record<string, unknown>,
+) => {
+  const videoQuery = new QueryBuilder(Video.find().lean(), query)
     .search(['title'])
     .fields()
     .filter()
@@ -40,10 +45,18 @@ const getAllVideoFromDB = async (query: Record<string, unknown>) => {
     .sort();
   const meta = await videoQuery.countTotal();
   const result = await videoQuery.modelQuery;
+  const bookmarks = await VideoBookmark.find({ user: profileId }).select(
+    'video',
+  );
+  const bookmarkVideoIds = new Set(bookmarks.map((b) => b?.video?.toString()));
 
+  const enrichedResult = result.map((video) => ({
+    ...video,
+    isBookmark: bookmarkVideoIds.has((video as any)._id.toString()),
+  }));
   return {
     meta,
-    result,
+    result: enrichedResult,
   };
 };
 

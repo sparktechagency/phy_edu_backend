@@ -32,7 +32,10 @@ const updateVideo = catchAsync(async (req, res) => {
 
 // get all videos
 const getAllVideo = catchAsync(async (req, res) => {
-  const result = await VideoService.getAllVideoFromDB(req?.query);
+  const result = await VideoService.getAllVideoFromDB(
+    req?.user?.profileId,
+    req?.query,
+  );
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
