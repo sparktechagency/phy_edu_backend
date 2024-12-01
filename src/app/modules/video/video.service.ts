@@ -66,7 +66,7 @@ const deleteVideoFromDB = async (id: string) => {
   }
 
   // delete associated files (video and thumbnail image)
-  //!TODO: delete thumbnail and video file
+  //!TODO: delete thumbnail and video file--------
   const rootPath = process.cwd();
   const videoPath = path.join(rootPath, video.video);
   const thumbnailPath = path.join(rootPath, video.thumbnail_image);
