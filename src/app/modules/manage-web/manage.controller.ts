@@ -22,6 +22,15 @@ const addPrivacyPolicy = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+const addLawForm = catchAsync(async (req: Request, res: Response) => {
+  const result = await ManageService.addLawForm(req.body);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: 'Law form added successfully ',
+    data: result,
+  });
+});
 const addPartner = catchAsync(async (req: Request, res: Response) => {
   const result = await ManageService.addPartner(req.body);
   sendResponse(res, {
@@ -64,6 +73,15 @@ const getPrivacyPolicy = catchAsync(async (req: Request, res: Response) => {
     statusCode: 200,
     success: true,
     message: 'Privacy Policy retrieved successfully',
+    data: result,
+  });
+});
+const getLawForm = catchAsync(async (req: Request, res: Response) => {
+  const result = await ManageService.getLawForm();
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: 'Law form retrieved successfully',
     data: result,
   });
 });
@@ -121,6 +139,15 @@ const editPrivacyPolicy = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+const editLawForm = catchAsync(async (req: Request, res: Response) => {
+  const result = await ManageService.editLawForm(req.params.id, req.body);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: 'Law form updated successfully',
+    data: result,
+  });
+});
 const editPartner = catchAsync(async (req: Request, res: Response) => {
   const result = await ManageService.editPartner(req.params.id, req.body);
   sendResponse(res, {
@@ -175,6 +202,15 @@ const deleteAboutUs = catchAsync(async (req: Request, res: Response) => {
     statusCode: 200,
     success: true,
     message: 'About us deleted successfully',
+    data: result,
+  });
+});
+const deleteLawForm = catchAsync(async (req: Request, res: Response) => {
+  const result = await ManageService.deleteLawForm(req.params.id);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: 'Law form deleted successfully',
     data: result,
   });
 });
@@ -291,5 +327,9 @@ export const ManageController = {
   addPartner,
   getPartner,
   editPartner,
-  deletePartner
+  deletePartner,
+  addLawForm,
+  editLawForm,
+  deleteLawForm,
+  getLawForm,
 };
