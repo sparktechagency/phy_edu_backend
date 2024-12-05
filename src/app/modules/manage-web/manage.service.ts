@@ -6,6 +6,7 @@ import {
   AboutUs,
   ContactUs,
   FAQ,
+  LawForm,
   Partner,
   PrivacyPolicy,
   Slider,
@@ -49,6 +50,40 @@ const deletePrivacyPolicy = async (id: string) => {
     throw new AppError(404, 'Privacy Policy not found');
   }
   return await PrivacyPolicy.findByIdAndDelete(id);
+};
+//! law form
+const addLawForm = async (payload: any) => {
+  const checkIsExist = await LawForm.findOne();
+  if (checkIsExist) {
+    await LawForm.findOneAndUpdate({}, payload, {
+      new: true,
+
+      runValidators: true,
+    });
+  } else {
+    return await LawForm.create(payload);
+  }
+};
+const getLawForm = async () => {
+  return await LawForm.findOne();
+};
+const editLawForm = async (id: string, payload: { description: string }) => {
+  const isExist = await LawForm.findById(id);
+  if (!isExist) {
+    throw new AppError(404, 'Law form not found');
+  }
+  const result = await LawForm.findOneAndUpdate({ _id: id }, payload, {
+    new: true,
+    runValidators: true,
+  });
+  return result;
+};
+const deleteLawForm = async (id: string) => {
+  const isExist = await LawForm.findById(id);
+  if (!isExist) {
+    throw new AppError(404, 'Privacy Policy not found');
+  }
+  return await LawForm.findByIdAndDelete(id);
 };
 //! Partner
 const addPartner = async (payload: any) => {
@@ -296,4 +331,8 @@ export const ManageService = {
   editPartner,
   getPartner,
   deletePartner,
+  addLawForm,
+  getLawForm,
+  editLawForm,
+  deleteLawForm,
 };
