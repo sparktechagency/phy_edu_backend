@@ -33,12 +33,18 @@ router.post(
   ManageController.addPrivacyPolicy,
 );
 router.post(
+  '/add-law-form',
+  auth(USER_ROLE.superAdmin),
+  ManageController.addLawForm,
+);
+router.post(
   '/add-slider',
   auth(USER_ROLE.superAdmin),
   uploadFile(),
   ManageController.addSlider,
 );
 router.get('/get-privacy-policy', ManageController.getPrivacyPolicy);
+router.get('/get-law-form', ManageController.getLawForm);
 router.get('/get-partner', ManageController.getPartner);
 router.get(
   '/get-slider',
@@ -53,6 +59,11 @@ router.patch(
   '/edit-privacy-policy/:id',
   auth(USER_ROLE.superAdmin),
   ManageController.editPrivacyPolicy,
+);
+router.patch(
+  '/edit-law-form/:id',
+  auth(USER_ROLE.superAdmin),
+  ManageController.editLawForm,
 );
 router.patch(
   '/edit-partner/:id',
@@ -109,6 +120,11 @@ router.delete(
   '/delete-privacy-policy/:id',
   auth(USER_ROLE.superAdmin),
   ManageController.deletePrivacyPolicy,
+);
+router.delete(
+  '/delete-law-form/:id',
+  auth(USER_ROLE.superAdmin),
+  ManageController.deleteLawForm,
 );
 router.delete(
   '/delete-partner/:id',
