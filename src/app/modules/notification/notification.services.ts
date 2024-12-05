@@ -7,7 +7,6 @@ import QueryBuilder from '../../builder/QueryBuilder';
 import Notification from './notification.model';
 // import getAdminNotificationCount from '../../helper/getAdminNotification';
 // import getUnseenNotificationCount from '../../helper/getUnseenNotification';
-
 const getAllNotificationFromDB = async (
   query: Record<string, any>,
   user: JwtPayload,

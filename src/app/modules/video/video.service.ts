@@ -18,7 +18,6 @@ const createVideoIntoDB = async (payload: IVideo) => {
 };
 
 // update the video
-
 const updateVideoIntoDB = async (id: string, payload: Partial<IVideo>) => {
   const video = await Video.findById(id);
   if (!video) {
@@ -32,7 +31,6 @@ const updateVideoIntoDB = async (id: string, payload: Partial<IVideo>) => {
 };
 
 // get all videos
-
 const getAllVideoFromDB = async (
   profileId: string,
   query: Record<string, unknown>,
@@ -61,7 +59,6 @@ const getAllVideoFromDB = async (
 };
 
 // get single article
-
 const getSingleVideoFromDB = async (id: string) => {
   const video = await Video.findById(id);
   if (!video) {

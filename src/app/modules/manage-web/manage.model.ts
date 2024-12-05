@@ -15,6 +15,21 @@ const privacySchema = new mongoose.Schema(
     },
   },
 );
+//! law form
+const lawFormSchema = new mongoose.Schema(
+  {
+    description: {
+      type: String,
+      required: true,
+    },
+  },
+  {
+    timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
+  },
+);
 //! About US
 const aboutUsSchema = new mongoose.Schema(
   {
@@ -127,3 +142,4 @@ export const ContactUs = model('ContactUs', contactUsSchema);
 export const FAQ = model('FAQ', faqSchema);
 export const Slider = model('Slider', sliderSchema);
 export const Partner = model('Partner', partnerSchema);
+export const LawForm = model('LegalForm', lawFormSchema);
