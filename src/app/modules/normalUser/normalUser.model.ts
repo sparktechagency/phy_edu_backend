@@ -28,6 +28,7 @@ const NormalUserSchema = new Schema<INormalUser>(
     },
     dateOfBirth: {
       type: Date,
+      default: null,
     },
     gender: {
       type: String,
