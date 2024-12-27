@@ -17,7 +17,7 @@ const createArticleIntoDB = async (payload: IArticle) => {
   return result;
 };
 
-// update the video
+// update the video----------------------------
 
 const updateArticleIntoDB = async (id: string, payload: Partial<IArticle>) => {
   const article = await Article.findById(id);
@@ -31,7 +31,7 @@ const updateArticleIntoDB = async (id: string, payload: Partial<IArticle>) => {
   return result;
 };
 
-// get all videos
+// get all videos------------------------------
 
 const getAllArticleFromDB = async (
   profileId: string,
@@ -64,7 +64,7 @@ const getAllArticleFromDB = async (
   };
 };
 
-// get single article
+// get single article------------------
 const getSingleArticleFromDB = async (id: string) => {
   const result = await Article.findById(id).populate('category');
   if (!result) {
