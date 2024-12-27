@@ -10,6 +10,7 @@ import { USER_ROLE } from './user.constant';
 import NormalUser from '../normalUser/normalUser.model';
 // import cron from 'node-cron';
 import { JwtPayload } from 'jsonwebtoken';
+import SuperAdmin from '../superAdmin/superAdmin.model';
 
 const registerUser = async (
   password: string,
@@ -66,6 +67,8 @@ const getMyProfile = async (userData: JwtPayload) => {
   let result = null;
   if (userData.role === USER_ROLE.user) {
     result = await NormalUser.findOne({ email: userData.email });
+  } else if (userData?.role === USER_ROLE.superAdmin) {
+    result = await SuperAdmin.findOne({ user: userData.id });
   }
   return result;
 };
