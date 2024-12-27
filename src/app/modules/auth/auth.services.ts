@@ -243,7 +243,7 @@ const forgetPassword = async (email: string) => {
     {
       resetCode: resetCode,
       isResetVerified: false,
-      codeExpireIn: new Date(Date.now() + 5 * 60000),
+      codeExpireIn: new Date(Date.now() + 2 * 60000),
     },
   );
 
@@ -395,7 +395,7 @@ const resendResetCode = async (email: string) => {
     {
       resetCode: resetCode,
       isResetVerified: false,
-      codeExpireIn: new Date(Date.now() + 5 * 60000),
+      codeExpireIn: new Date(Date.now() + 2 * 60000),
     },
   );
   sendEmail({
@@ -424,7 +424,7 @@ const resendVerifyCode = async (email: string) => {
     {
       verifyCode: verifyCode,
       isVerified: false,
-      codeExpireIn: new Date(Date.now() + 5 * 60000),
+      codeExpireIn: new Date(Date.now() + 2 * 60000),
     },
   );
   sendEmail({
