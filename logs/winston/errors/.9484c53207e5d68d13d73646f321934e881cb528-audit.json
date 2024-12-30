@@ -84,6 +84,11 @@
             "date": 1735533531600,
             "name": "D:\\Solution Squed Project\\educational-website\\logs\\winston\\errors\\um-2024-12-30-10-error.log",
             "hash": "1e00ea7a69e8d3417a8fb589c7fecf353611147e39fcfe08837aba74db535184"
+        },
+        {
+            "date": 1735538102694,
+            "name": "D:\\Solution Squed Project\\educational-website\\logs\\winston\\errors\\um-2024-12-30-11-error.log",
+            "hash": "19b6c9213ba816bb4b8338eb1bbf2fe0524960c2438d51a3318180595db26372"
         }
     ],
     "hashType": "sha256"

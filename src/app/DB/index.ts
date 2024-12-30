@@ -25,6 +25,7 @@ const seedSuperAdmin = async () => {
       username: 'mradmin',
       email: config.super_admin_email,
       password: config.super_admin_password,
+      phone: '+384938498383',
       role: USER_ROLE.superAdmin,
       isVerified: true,
     };
