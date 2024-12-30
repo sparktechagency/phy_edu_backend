@@ -6,6 +6,7 @@ import fs from 'fs';
 export const uploadFile = () => {
   const storage = multer.diskStorage({
     destination: function (req, file, cb) {
+      console.log('Uploading file', file);
       let uploadPath = '';
 
       if (file.fieldname === 'profile_image') {

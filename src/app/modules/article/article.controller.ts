@@ -23,7 +23,8 @@ const updateArticle = catchAsync(async (req, res) => {
   const { files } = req;
   if (files && typeof files === 'object' && 'article_images' in files) {
     const newImages = files['article_images'].map((file) => `${file.path}`);
-    req.body.article_images.push(...newImages);
+
+    req.body?.article_images?.push(...newImages);
   }
   const result = await ArticleService.updateArticleIntoDB(
     req.params.id,
