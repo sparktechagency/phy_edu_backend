@@ -8,12 +8,9 @@ export const handleChunkUpload = (req: Request, res: Response) => {
   const chunk = req.file;
   const { originalname, chunkIndex, totalChunks } = req.body;
 
-  // const uploadDir = path.join(__dirname, '../../uploads/video');
   const uploadDir = path.join(process.cwd(), 'uploads/video');
   const filePath = path.join(uploadDir, originalname);
-  // console.log('upload dir: ' + uploadDir);
   if (!fs.existsSync(uploadDir)) {
-    // fs.mkdirSync(uploadDir);
     fs.mkdirSync(uploadDir, { recursive: true });
   }
 
