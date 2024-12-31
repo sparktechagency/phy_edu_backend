@@ -61,6 +61,11 @@ const getAllVideoFromDB = async (
 // get single article
 const getSingleVideoFromDB = async (id: string) => {
   const video = await Video.findById(id);
+  await Video.findByIdAndUpdate(
+    id,
+    { $inc: { totalView: 1 } },
+    { new: true, runValidators: true },
+  );
   if (!video) {
     throw new AppError(httpStatus.NOT_FOUND, 'Video not found');
   }
@@ -81,7 +86,7 @@ const deleteVideoFromDB = async (id: string) => {
   const thumbnailPath = path.join(rootPath, video.thumbnail_image);
 
   try {
-    // await fs.unlink(videoPath);
+    await fs.unlink(videoPath);
     await fs.unlink(thumbnailPath);
   } catch (error) {
     throw new AppError(
