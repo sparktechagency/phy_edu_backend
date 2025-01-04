@@ -14,7 +14,7 @@ import multer from 'multer';
 import sendContactUsEmail from './app/helper/sendContactUsEmail';
 import { handleChunkUpload } from './app/helper/handleChunkVideoUpload';
 const upload = multer({ dest: 'uploads/' });
-// parser
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(
@@ -23,6 +23,8 @@ app.use(
       'http://localhost:5173',
       'http://192.168.10.33:3003',
       'http://192.168.10.33:3002',
+      'http://localhost:3000',
+      'http://localhost:3001',
     ],
     credentials: true,
   }),

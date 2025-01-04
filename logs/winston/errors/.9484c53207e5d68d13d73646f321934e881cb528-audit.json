@@ -119,6 +119,26 @@
             "date": 1735640304618,
             "name": "D:\\Solution Squed Project\\educational-website\\logs\\winston\\errors\\um-2024-12-31-16-error.log",
             "hash": "cc58545e8a31956d0ea746b29c714b5cc2f6bc1f65a2a49ec3cee10e5c91da5b"
+        },
+        {
+            "date": 1735796200665,
+            "name": "D:\\Solution Squed Project\\educational-website\\logs\\winston\\errors\\um-2025-01-02-11-error.log",
+            "hash": "e2f7039765cda1fe50a339162bbc049135a71be9b61d0e51960185608f446331"
+        },
+        {
+            "date": 1735811945107,
+            "name": "D:\\Solution Squed Project\\educational-website\\logs\\winston\\errors\\um-2025-01-02-15-error.log",
+            "hash": "80612d4c06cc773289b4b9cdf0d651ad2c05154727d77e5784dc8c52fa8710af"
+        },
+        {
+            "date": 1735878402422,
+            "name": "D:\\Solution Squed Project\\educational-website\\logs\\winston\\errors\\um-2025-01-03-10-error.log",
+            "hash": "79b6f17494d18325293c0a3c5aaac43030cb3c6ebf9d38b29d3bcb48fad43254"
+        },
+        {
+            "date": 1735960464222,
+            "name": "D:\\Solution Squed Project\\educational-website\\logs\\winston\\errors\\um-2025-01-04-09-error.log",
+            "hash": "b6be623a804c5bc49b4cb1b3b8f424dac64123a4287ba14acd01c30e93034d6c"
         }
     ],
     "hashType": "sha256"
