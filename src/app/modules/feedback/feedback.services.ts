@@ -5,9 +5,11 @@ import { IFeedback } from './feedback.interface';
 import Feedback from './feedback.model';
 import QueryBuilder from '../../builder/QueryBuilder';
 import Notification from '../notification/notification.model';
+import NormalUser from '../normalUser/normalUser.model';
 
 const createFeedBack = async (userId: string, payload: IFeedback) => {
-  const result = await Feedback.create({ ...payload, user: userId });
+  const normalUser = await NormalUser.findById(userId).select('username');
+  const result = await Feedback.create({ ...payload,name:normalUser?.username, user: userId });
   return result;
 };
 
