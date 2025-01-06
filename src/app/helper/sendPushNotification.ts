@@ -19,7 +19,7 @@ const sendNotification = async ({
   data,
 }: INotificationPayload) => {
   if (playerIds.length === 0) {
-    console.error('No Player IDs provided.');
+    // console.error('No Player IDs provided.');
     return;
   }
 
