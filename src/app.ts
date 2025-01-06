@@ -17,6 +17,8 @@ const upload = multer({ dest: 'uploads/' });
 
 app.use(express.json());
 app.use(cookieParser());
+
+// cors ----------------------
 app.use(
   cors({
     origin: [
