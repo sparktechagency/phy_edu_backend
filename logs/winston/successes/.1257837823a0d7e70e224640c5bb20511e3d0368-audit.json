@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\.1257837823a0d7e70e224640c5bb20511e3d0368-audit.json",
+    "files": [
+        {
+            "date": 1736136999937,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-06-10-success.log",
+            "hash": "8bf6f00841c6a73e62a5d25b793fcc7564aba0423e0b5af9eb0d7394ab2c6899"
+        }
+    ],
+    "hashType": "sha256"
+}
