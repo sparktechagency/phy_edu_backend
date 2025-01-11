@@ -18,7 +18,6 @@ const createArticleIntoDB = async (payload: IArticle) => {
 };
 
 // update the video----------------------------
-
 const updateArticleIntoDB = async (id: string, payload: Partial<IArticle>) => {
   const article = await Article.findById(id);
   if (!article) {

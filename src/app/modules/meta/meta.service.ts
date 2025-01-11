@@ -11,10 +11,8 @@ const getDashboardMetaData = async () => {
 };
 
 const getUserChartData = async (year: number) => {
-  // Start of the year
-  const startOfYear = new Date(year, 0, 1); // January 1st
-  // End of the year
-  const endOfYear = new Date(year + 1, 0, 1); // January 1st of the next year
+  const startOfYear = new Date(year, 0, 1);
+  const endOfYear = new Date(year + 1, 0, 1);
 
   const chartData = await NormalUser.aggregate([
     {

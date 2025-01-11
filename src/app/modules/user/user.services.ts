@@ -66,9 +66,15 @@ const registerUser = async (
 const getMyProfile = async (userData: JwtPayload) => {
   let result = null;
   if (userData.role === USER_ROLE.user) {
-    result = await NormalUser.findOne({ email: userData.email });
+    result = await NormalUser.findOne({ email: userData.email }).populate({
+      path: 'user',
+      select: 'role -_id',
+    });
   } else if (userData?.role === USER_ROLE.superAdmin) {
-    result = await SuperAdmin.findOne({ user: userData.id });
+    result = await SuperAdmin.findOne({ user: userData.id }).populate({
+      path: 'user',
+      select: 'role -_id',
+    });
   }
   return result;
 };
