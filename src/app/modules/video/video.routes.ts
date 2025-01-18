@@ -38,7 +38,7 @@ router.patch(
 );
 
 router.get('/get-all-videos', simpleAuth, VideoController.getAllVideo);
-router.get('/get-single-video/:id', VideoController.getSingleVideo);
+router.get('/get-single-video/:id', simpleAuth, VideoController.getSingleVideo);
 router.delete('/delete-video/:id', VideoController.deleteVideo);
 
 export const videoRoutes = router;

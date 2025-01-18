@@ -59,7 +59,7 @@ const getAllVideoFromDB = async (
 };
 
 // get single article
-const getSingleVideoFromDB = async (id: string) => {
+const getSingleVideoFromDB = async (profileId: string, id: string) => {
   const video = await Video.findById(id);
   await Video.findByIdAndUpdate(
     id,
@@ -69,7 +69,16 @@ const getSingleVideoFromDB = async (id: string) => {
   if (!video) {
     throw new AppError(httpStatus.NOT_FOUND, 'Video not found');
   }
-  return video;
+  const bookmarkVideo = await VideoBookmark.findOne({
+    article: video._id,
+    user: profileId,
+  });
+  const videoWithBookmarkStatus = {
+    ...video.toObject(),
+    isBookmarked: !!bookmarkVideo,
+  };
+
+  return videoWithBookmarkStatus;
 };
 
 // delete video----------------

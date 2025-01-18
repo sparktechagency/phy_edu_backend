@@ -46,7 +46,10 @@ const getAllVideo = catchAsync(async (req, res) => {
 
 // get single video
 const getSingleVideo = catchAsync(async (req, res) => {
-  const result = await VideoService.getSingleVideoFromDB(req.params.id);
+  const result = await VideoService.getSingleVideoFromDB(
+    req.user.profileId,
+    req.params.id,
+  );
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
