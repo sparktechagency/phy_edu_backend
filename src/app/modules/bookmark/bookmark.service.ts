@@ -38,7 +38,7 @@ const getAllArticleBookmark = async (
   query: Record<string, unknown>,
 ) => {
   const articleBookmarkQuery = new QueryBuilder(
-    ArticleBookmark.find({ user: profileId }),
+    ArticleBookmark.find({ user: profileId }).populate({ path: 'article' }),
     query,
   )
     .search([''])
@@ -88,7 +88,7 @@ const getAllVideoBookmark = async (
   query: Record<string, unknown>,
 ) => {
   const videoBookmarkQuery = new QueryBuilder(
-    VideoBookmark.find({ user: profileId }),
+    VideoBookmark.find({ user: profileId }).populate({ path: 'video' }),
     query,
   )
     .search([''])

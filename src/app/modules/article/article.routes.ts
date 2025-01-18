@@ -38,7 +38,11 @@ router.patch(
 );
 
 router.get('/get-all-article', simpleAuth, ArticleController.getAllArticle);
-router.get('/single-article/:id', ArticleController.getSingleArticle);
+router.get(
+  '/single-article/:id',
+  simpleAuth,
+  ArticleController.getSingleArticle,
+);
 // delete article---
 router.delete(
   '/delete-article/:id',

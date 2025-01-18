@@ -64,12 +64,24 @@ const getAllArticleFromDB = async (
 };
 
 // get single article------------------
-const getSingleArticleFromDB = async (id: string) => {
+const getSingleArticleFromDB = async (profileId: string, id: string) => {
   const result = await Article.findById(id).populate('category');
+
   if (!result) {
     throw new AppError(httpStatus.NOT_FOUND, 'Article not found');
   }
-  return result;
+
+  const bookmarkArticle = await ArticleBookmark.findOne({
+    article: result._id,
+    user: profileId,
+  });
+
+  const articleWithBookmarkStatus = {
+    ...result.toObject(),
+    isBookmarked: !!bookmarkArticle,
+  };
+
+  return articleWithBookmarkStatus;
 };
 
 // delete video----------------

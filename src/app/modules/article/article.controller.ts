@@ -41,7 +41,10 @@ const updateArticle = catchAsync(async (req, res) => {
 // get single article
 
 const getSingleArticle = catchAsync(async (req, res) => {
-  const result = await ArticleService.getSingleArticleFromDB(req.params.id);
+  const result = await ArticleService.getSingleArticleFromDB(
+    req?.user?.profileId,
+    req.params.id,
+  );
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
