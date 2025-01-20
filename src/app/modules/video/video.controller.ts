@@ -47,7 +47,7 @@ const getAllVideo = catchAsync(async (req, res) => {
 // get single video
 const getSingleVideo = catchAsync(async (req, res) => {
   const result = await VideoService.getSingleVideoFromDB(
-    req.user.profileId,
+    req?.user?.profileId,
     req.params.id,
   );
   sendResponse(res, {

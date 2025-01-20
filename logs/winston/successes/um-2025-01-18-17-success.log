@@ -1,0 +1,5 @@
+Sat Jan 18 2025 17:41 0 [Kids Know Rights] info: DB Connected Successfully
+Sat Jan 18 2025 17:41 0 [Kids Know Rights] info: Kids know rights listening on port 9050
+Sat Jan 18 2025 17:41 7 [Kids Know Rights] error: Unhandled Rejection: Caused by :: Unable to write to collection 'educationDB.superadmins' due to catalog changes; please retry the operation :: Please retry your operation or multi-document transaction.
+Sat Jan 18 2025 17:42 26 [Kids Know Rights] info: DB Connected Successfully
+Sat Jan 18 2025 17:42 26 [Kids Know Rights] info: Kids know rights listening on port 9050

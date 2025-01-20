@@ -35,7 +35,10 @@ const getAllVideoFromDB = async (
   profileId: string,
   query: Record<string, unknown>,
 ) => {
-  const videoQuery = new QueryBuilder(Video.find().lean(), query)
+  const videoQuery = new QueryBuilder(
+    Video.find().populate({ path: 'category', select: 'name' }),
+    query,
+  )
     .search(['title'])
     .fields()
     .filter()
@@ -49,7 +52,7 @@ const getAllVideoFromDB = async (
   const bookmarkVideoIds = new Set(bookmarks.map((b) => b?.video?.toString()));
 
   const enrichedResult = result.map((video) => ({
-    ...video,
+    ...video.toObject(),
     isBookmark: bookmarkVideoIds.has((video as any)._id.toString()),
   }));
   return {

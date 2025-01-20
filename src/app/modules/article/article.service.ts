@@ -36,7 +36,10 @@ const getAllArticleFromDB = async (
   profileId: string,
   query: Record<string, unknown>,
 ) => {
-  const articleQuery = new QueryBuilder(Article.find().lean(), query)
+  const articleQuery = new QueryBuilder(
+    Article.find().populate({ path: 'category', select: 'name' }).lean(),
+    query,
+  )
     .search(['title'])
     .fields()
     .filter()
