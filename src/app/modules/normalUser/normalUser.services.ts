@@ -28,7 +28,6 @@ const getAllNormalUser = async (query: Record<string, unknown>) => {
     .sort();
   const meta = await normalUserQuery.countTotal();
   const result = await normalUserQuery.modelQuery;
-
   return {
     meta,
     result,

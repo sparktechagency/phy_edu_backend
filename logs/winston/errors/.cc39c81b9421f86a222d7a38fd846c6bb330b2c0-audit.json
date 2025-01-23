@@ -6,81 +6,6 @@
     "auditLog": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\.cc39c81b9421f86a222d7a38fd846c6bb330b2c0-audit.json",
     "files": [
         {
-            "date": 1736136999939,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-06-10-error.log",
-            "hash": "a8dbcb44353524092f390bd29983e791fab003962aece3a1e364ade4c38d475b"
-        },
-        {
-            "date": 1736140129731,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-06-11-error.log",
-            "hash": "45abedaf35ffd5402b94e4bddd5ace2c10763c696cd8cad358e8c07476bcccb9"
-        },
-        {
-            "date": 1736148431735,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-06-13-error.log",
-            "hash": "9d7795e0bdc1dabeae548433c5f95c3c2fdd2e0c958d731d1aeb67e037fa64b9"
-        },
-        {
-            "date": 1736150857069,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-06-14-error.log",
-            "hash": "6b41a5e44c227a0630907fc82089032e004fa6e0fd8d28708e9fa19079109f71"
-        },
-        {
-            "date": 1736154488601,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-06-15-error.log",
-            "hash": "f5cd5b0736a91f0cc22b156ece8082d88048417911b22d02795aeca6c6c27cfc"
-        },
-        {
-            "date": 1736157980155,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-06-16-error.log",
-            "hash": "5020380d5ff165cb98cf1b20611fab319a9e58675910e4aecf583bb40f92c914"
-        },
-        {
-            "date": 1736226994510,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-07-11-error.log",
-            "hash": "0ae5661cb04ef3dec0383be9977938fcd7d080289eb11ac56050991d4891f137"
-        },
-        {
-            "date": 1736233178771,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-07-12-error.log",
-            "hash": "5698074df79421758a2156dfa5a3193c94f2a8c1e71b7c4ac05877a1f300b929"
-        },
-        {
-            "date": 1736235706250,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-07-13-error.log",
-            "hash": "b542b7f21b10569c059c504aefde9d686e49b2be71636da6e3f4fe1ca92596a0"
-        },
-        {
-            "date": 1736237290059,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-07-14-error.log",
-            "hash": "207d338263676b0ff70dd7740357280dd1607cd6ed13d3f34628be453076dbd1"
-        },
-        {
-            "date": 1736249176988,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-07-17-error.log",
-            "hash": "fbc0a1a2e366346b49d22e7c286381f763c83a0040219176efc07e511d5a78e6"
-        },
-        {
-            "date": 1736252639360,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-07-18-error.log",
-            "hash": "993898cc7d6f11a6bef67404beebe17a0369b173abd5b54f836cef7b1bb220da"
-        },
-        {
-            "date": 1736309556751,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-08-10-error.log",
-            "hash": "bff2326e893b08e223191eb52c73200a3d65218966a6aa62de2c00ab00163175"
-        },
-        {
-            "date": 1736397750707,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-09-10-error.log",
-            "hash": "9db3ac107597d4fc9b3ab35c6370daeb586252966d34638233dd6f42c69daef8"
-        },
-        {
-            "date": 1736400322239,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-09-11-error.log",
-            "hash": "24edd829c45f0920a497ba0f8e4f821a87763fdfbee066c0528fd761fc17f9be"
-        },
-        {
             "date": 1736424890413,
             "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-09-18-error.log",
             "hash": "67c72b0723fe4ef0b5e18ef32edb57064fcb2656d85175343b158753ed6d6bdd"
@@ -179,6 +104,31 @@
             "date": 1737346165278,
             "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-20-10-error.log",
             "hash": "fbbd5646f8f8fba368f71ae4fcfbed77eb1d8e0e99e717bfd848c503f3fc2c5a"
+        },
+        {
+            "date": 1737371380324,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-20-17-error.log",
+            "hash": "7f4c8ceb0e245cdf191d435e22bf1c139da3d7c75a9826f33c478a528f3a8793"
+        },
+        {
+            "date": 1737605766750,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-23-10-error.log",
+            "hash": "5a6d062fff857accd40ca3cd76c61c3176d5bad707e48c0cea5d78f29fa06318"
+        },
+        {
+            "date": 1737608423643,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-23-11-error.log",
+            "hash": "4dc74942291d0d464f7560dc642e8b7c5b826eda72edd47633972e3dbd6ff5a8"
+        },
+        {
+            "date": 1737613800955,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-23-12-error.log",
+            "hash": "5e24fc2242d2eb8873ba39d3305da87d27146245c8a9c214d49ad586dc9c3730"
+        },
+        {
+            "date": 1737620710060,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-23-14-error.log",
+            "hash": "3455165da095e2066917dc429406a8596403256eb0f81f2b5ddb827c4e168398"
         }
     ],
     "hashType": "sha256"

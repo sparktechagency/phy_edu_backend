@@ -73,7 +73,7 @@ const getSingleVideoFromDB = async (profileId: string, id: string) => {
     throw new AppError(httpStatus.NOT_FOUND, 'Video not found');
   }
   const bookmarkVideo = await VideoBookmark.findOne({
-    article: video._id,
+    video: video._id,
     user: profileId,
   });
   const videoWithBookmarkStatus = {
