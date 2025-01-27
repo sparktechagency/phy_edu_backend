@@ -5,8 +5,6 @@ import { IVideo } from './video.interface';
 import { Video } from './video.model';
 import QueryBuilder from '../../builder/QueryBuilder';
 import Category from '../category/category.model';
-import fs from 'fs/promises';
-import path from 'path';
 import { VideoBookmark } from '../bookmark/bookmark.model';
 import unlinkFile from '../../helper/unLinkFile';
 const createVideoIntoDB = async (payload: IVideo) => {
