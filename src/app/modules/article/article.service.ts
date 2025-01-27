@@ -3,8 +3,6 @@ import httpStatus from 'http-status';
 import AppError from '../../error/appError';
 import QueryBuilder from '../../builder/QueryBuilder';
 import Category from '../category/category.model';
-import fs from 'fs/promises';
-import path from 'path';
 import { IArticle } from './article.interface';
 import { Article } from './article.model';
 import { ArticleBookmark } from '../bookmark/bookmark.model';
