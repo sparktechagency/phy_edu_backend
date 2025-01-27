@@ -16,6 +16,7 @@ const unlinkFile = (filePath: string) => {
     });
   } else {
     console.log(`File does not exist`);
+    // console if have any error
   }
 };
 
