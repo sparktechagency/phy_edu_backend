@@ -8,6 +8,7 @@ import Category from '../category/category.model';
 import fs from 'fs/promises';
 import path from 'path';
 import { VideoBookmark } from '../bookmark/bookmark.model';
+import unlinkFile from '../../helper/unLinkFile';
 const createVideoIntoDB = async (payload: IVideo) => {
   const category = await Category.findById(payload.category);
   if (!category) {
@@ -27,6 +28,9 @@ const updateVideoIntoDB = async (id: string, payload: Partial<IVideo>) => {
     new: true,
     runValidators: true,
   });
+  if (payload.video) {
+    unlinkFile(payload.video);
+  }
   return result;
 };
 
@@ -93,21 +97,11 @@ const deleteVideoFromDB = async (id: string) => {
 
   // delete associated files (video and thumbnail image)
   //!TODO: delete thumbnail and video file--------
-  const rootPath = process.cwd();
-  const videoPath = path.join(rootPath, video.video);
-  const thumbnailPath = path.join(rootPath, video.thumbnail_image);
-
-  try {
-    await fs.unlink(videoPath);
-    await fs.unlink(thumbnailPath);
-  } catch (error) {
-    throw new AppError(
-      httpStatus.INTERNAL_SERVER_ERROR,
-      'Error deleting associated files',
-    );
-  }
 
   const result = await Video.findByIdAndDelete(id);
+  if (video.video) {
+    unlinkFile(video.video);
+  }
   return result;
 };
 

@@ -8,6 +8,7 @@ import path from 'path';
 import { IArticle } from './article.interface';
 import { Article } from './article.model';
 import { ArticleBookmark } from '../bookmark/bookmark.model';
+import unlinkFile from '../../helper/unLinkFile';
 const createArticleIntoDB = async (payload: IArticle) => {
   const category = await Category.findById(payload.category);
   if (!category) {
@@ -95,24 +96,12 @@ const deleteArticleFromDB = async (id: string) => {
     throw new AppError(httpStatus.NOT_FOUND, 'Article not found');
   }
 
-  // the associated article images
-  const rootPath = process.cwd();
-
-  const deletionPromises = article.article_images.map(async (image) => {
-    const articleImagePath = path.join(rootPath, image); // Construct the full image path
-
-    try {
-      await fs.unlink(articleImagePath);
-    } catch (error) {
-      throw new AppError(
-        httpStatus.INTERNAL_SERVER_ERROR,
-        `Error deleting associated file: ${image}`,
-      );
-    }
-  });
-  await Promise.all(deletionPromises);
-
   const result = await Article.findByIdAndDelete(id);
+  if (article.article_images && Array.isArray(article.article_images)) {
+    for (const image of article.article_images) {
+      unlinkFile(image);
+    }
+  }
   return result;
 };
 
