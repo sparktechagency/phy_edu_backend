@@ -50,7 +50,7 @@ const getAllVideoFromDB = async (
     'video',
   );
   const bookmarkVideoIds = new Set(bookmarks.map((b) => b?.video?.toString()));
-
+  // typw error -------------
   const enrichedResult = result.map((video) => ({
     ...video.toObject(),
     isBookmark: bookmarkVideoIds.has((video as any)._id.toString()),

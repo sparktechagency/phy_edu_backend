@@ -1,0 +1,2 @@
+Sun Jan 26 2025 18:15 7 [Food Delivery] error: Error in main function: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+Sun Jan 26 2025 18:15 7 [Food Delivery] error: Main function error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.

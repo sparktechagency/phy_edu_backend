@@ -6,41 +6,6 @@
     "auditLog": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\.1257837823a0d7e70e224640c5bb20511e3d0368-audit.json",
     "files": [
         {
-            "date": 1736424890411,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-09-18-success.log",
-            "hash": "9385804f4c15e1d76cf363b5df76f216879b3e44de5548d9dfffa7ad66d43ce9"
-        },
-        {
-            "date": 1736565429503,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-11-09-success.log",
-            "hash": "11aec755d8a1806fce8b6a51c83be9bdb70970bc380cedfd1b2d39f7cf6ab636"
-        },
-        {
-            "date": 1736582113219,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-11-13-success.log",
-            "hash": "c97945ed67e471ec0b7332fbc08a41fa4bcb108c26a874d0a4e788e881ba0cea"
-        },
-        {
-            "date": 1736588470266,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-11-15-success.log",
-            "hash": "c818bbd6a64ccf2fb34e2740174b0b7abb5d34e62285044167e42bc7be940322"
-        },
-        {
-            "date": 1736591301897,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-11-16-success.log",
-            "hash": "498e5069c96243ee2bad47515cc226cde61a03d1bc3a6f8c788dd854c7c7295d"
-        },
-        {
-            "date": 1736594564452,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-11-17-success.log",
-            "hash": "b81e98521a156fdcdcaa5ab25befb9a15ba256aa90125892befb004234ab0b23"
-        },
-        {
-            "date": 1736598855694,
-            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-11-18-success.log",
-            "hash": "46847f456808069540d19e8735d04e96b123b4610741e803c1d8f8aad08e1b62"
-        },
-        {
             "date": 1737088803215,
             "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-17-10-success.log",
             "hash": "78e2339180cb2e3667b410376f0329975de983ef92cfa3a4c67971455ff33413"
@@ -129,6 +94,16 @@
             "date": 1737620710057,
             "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-23-14-success.log",
             "hash": "77b036d00618b392c60aafd0495ab39d4bd9b4591856a4288dfc22df4197fc9e"
+        },
+        {
+            "date": 1737893707555,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-26-18-success.log",
+            "hash": "2a9c0104a8d75d6d18cc8353b0d79137713449bcf2485784e3f75c2d8a9c8bd1"
+        },
+        {
+            "date": 1737948540405,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\successes\\um-2025-01-27-09-success.log",
+            "hash": "df4fae5159c77caba995fa27d86c55791aad1430ea66c45121f6890fccd6921f"
         }
     ],
     "hashType": "sha256"
