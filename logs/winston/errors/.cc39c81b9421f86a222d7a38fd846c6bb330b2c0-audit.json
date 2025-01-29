@@ -129,6 +129,11 @@
             "date": 1737968506423,
             "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-27-15-error.log",
             "hash": "1f83debfa01185a317856e1f90a7b6ce3a291cc3032cad6577c3d9bf49149802"
+        },
+        {
+            "date": 1738138239683,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-29-14-error.log",
+            "hash": "2719cbfd323bce10cc370ce8fc145fd856530acd382dbfef840e994e814939fa"
         }
     ],
     "hashType": "sha256"

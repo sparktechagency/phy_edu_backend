@@ -4,6 +4,7 @@ import { Types } from 'mongoose';
 export interface IArticle {
   category: Types.ObjectId;
   title: string;
+  summery: string;
   description: string;
   article_images: string[];
 }
