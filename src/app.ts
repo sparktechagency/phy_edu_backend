@@ -44,6 +44,7 @@ app.use(
     credentials: true,
   }),
 );
+// changes
 app.use('/uploads', express.static('uploads'));
 // application routers ----------------
 app.use('/', router);
