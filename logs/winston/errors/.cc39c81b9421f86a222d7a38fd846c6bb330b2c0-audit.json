@@ -134,6 +134,16 @@
             "date": 1738138239683,
             "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-29-14-error.log",
             "hash": "2719cbfd323bce10cc370ce8fc145fd856530acd382dbfef840e994e814939fa"
+        },
+        {
+            "date": 1738152880840,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-29-18-error.log",
+            "hash": "aae36146ce25d878207a4408768650521bc505705a055f9948b9d2ecd5613337"
+        },
+        {
+            "date": 1738215502487,
+            "name": "D:\\Solution Squad Projects\\phy_edu_backend\\logs\\winston\\errors\\um-2025-01-30-11-error.log",
+            "hash": "df87e154452868f25c3385bba8b8540065c315bd496ced761b6e4735d43778d2"
         }
     ],
     "hashType": "sha256"
