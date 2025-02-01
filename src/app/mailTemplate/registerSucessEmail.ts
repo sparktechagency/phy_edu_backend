@@ -95,7 +95,7 @@ const registrationSuccessEmailBody = (name: string, activationCode: number) => `
     <body>
       <div class="container">
         <div class="header">
-          <h1>Welcome to Protipzz</h1>
+          <h1>Welcome to Kids Know Rights</h1>
         </div>
         <div class="content">
           <h2>Hello, ${name}</h2>
@@ -104,17 +104,17 @@ const registrationSuccessEmailBody = (name: string, activationCode: number) => `
             <div class="activation-code">${activationCode || 'XXXXXX'}</div>
             <p>Enter this code on the activation page within the next 10 minutes. If you don't your account will be deleted from the database and you will need to register again.</p>
             <div class="button-container">
-              <a href="https://yourwebsite.com/activate" class="button">
+              <a href="https://kidsknowrights.com/activate" class="button">
                 <span class="activate-btn">Activate Now</span>
               </a>
             </div>
             <p>If you didn't register, ignore this email.</p>
             /* TODO: set client email here  */
-          <p>If you have any questions, feel free to contact us at <a href="maniksarker265@gmail.com">maniksarker265@gmail.com</a>.</p>
+          <p>If you have any questions, feel free to contact us at <a href="info@kidsknowrights.com">info@kidsknowrights.com</a>.</p>
         </div>
         <div class="footer">
           <p>&copy; ${new Date().getFullYear()} Protipzz. All rights reserved.</p>
-          <p><a href="https://yourwebsite.com/privacy">Privacy Policy</a> | <a href="https://yourwebsite.com/contact">Contact Us</a></p>
+          <p><a href="https://kidsknowrights.com/privacy">Privacy Policy</a> | <a href="https://kidsknowrights.com/contact">Contact Us</a></p>
         </div>
       </div>
     </body>
