@@ -40,6 +40,8 @@ app.use(
       'http://kidsknowrights.com',
       'https://admin.kidsknowrights.com',
       'http://admin.kidsknowrights.com',
+      'https://www.kidsknowrights.com',
+      'http://www.kidsknowrights.com',
     ],
     credentials: true,
   }),
