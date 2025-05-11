@@ -1,5 +1,6 @@
 import { Schema, model } from 'mongoose';
 import { IVideo } from './video.interface';
+import { ENUM_CONTENT_LANGUAGE } from '../../utilities/enum';
 
 const VideoSchema = new Schema<IVideo>(
   {
@@ -9,6 +10,10 @@ const VideoSchema = new Schema<IVideo>(
     video: { type: String, required: true },
     category: { type: Schema.Types.ObjectId, ref: 'Category', required: true },
     totalView: { type: Number, default: 0 },
+    language: {
+      type: String,
+      enum: Object.values(ENUM_CONTENT_LANGUAGE),
+    },
   },
   { timestamps: true },
 );
