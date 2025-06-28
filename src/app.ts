@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import express, { Application, Request, Response, application } from 'express';
+import express, { Application } from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
@@ -42,6 +42,8 @@ app.use(
       'http://admin.kidsknowrights.com',
       'https://www.kidsknowrights.com',
       'http://www.kidsknowrights.com',
+      'http://10.0.60.125:3002',
+      'http://10.0.60.125:3000',
     ],
     credentials: true,
   }),

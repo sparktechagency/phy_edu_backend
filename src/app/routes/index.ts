@@ -13,6 +13,7 @@ import { categoryRoutes } from '../modules/category/category.routes';
 import { metaRoutes } from '../modules/meta/meta.routes';
 import { bookmarkRoutes } from '../modules/bookmark/bookmark.routes';
 import { notificationRoutes } from '../modules/notification/notification.routes';
+import { subscriptionShowRoutes } from '../modules/subscriptionShow/subscriptionShow.routes';
 
 const router = Router();
 
@@ -69,6 +70,10 @@ const moduleRoutes = [
   {
     path: '/notification',
     router: notificationRoutes,
+  },
+  {
+    path: '/subscription-show',
+    router: subscriptionShowRoutes,
   },
 ];
 
